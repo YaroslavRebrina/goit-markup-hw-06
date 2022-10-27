@@ -371,6 +371,8 @@ margin-left: 50px;
     min-width: 528px;
     min-height: 581px;
     
+    padding: 40px;
+
     opacity: 1;
 
     background-color: #fff;
@@ -386,6 +388,125 @@ margin-left: 50px;
     transform 250ms var(--cubic-primary),
 }
 
+.modal-hero-form{
+    position: relative;
+    height: 100%;
+}
+
+.modal-hero-form .modal-header{
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+
+    margin-bottom: 12px;
+}
+
+.modal-hero-form .hero-label{
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    margin-bottom: 4px;
+    
+    color: var(--secondary-txt-color);
+}
+
+.modal-hero-form .modal-input{
+    width: 100%;
+    height: 40px;
+    padding-left: 42px; 
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+}
+
+.modal-hero-form .input-thumb{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.modal-hero-form .modal-comment{
+    resize: none;
+    padding: 12px 16px;
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.modal-hero-form .modal-comment::placeholder{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-thumb{
+    position: relative;
+}
+
+.checkbox-input{
+    appearance: none;
+}
+
+.custom-checkbox{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+}
+
+.checkbox-input:checked ~ .custom-checkbox{
+    background-image: url(../image/icons/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border: none;
+}
+.terms{
+position: absolute;
+}
+
+.terms a{
+    color: var(--accent-txt-cl);
+}
+
+.form-submit{
+    margin-top: 30px;
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.button-thumb{
+    display: flex;
+    margin-top: 30px;
+}
+
+.hero-modal-img{
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    width: 18px;
+    height: 18px;
+}
 
 
 .close-button{
@@ -752,7 +873,7 @@ margin-left: 50px;
 /* footer-form */
 
 .subscription-thumb{
-    margin-left: 93px ;
+    margin-left: 93px;
 }
 
 .subscription-header{
@@ -765,7 +886,6 @@ margin-left: 50px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--footer-txt-color);
 }
 
@@ -775,17 +895,18 @@ margin-left: 50px;
 
 .footer-form .flexbox{
     display: flex;
-    gap: 12px;
 }
 
 .footer-form .input-email{
     display: block;
     width: 358px;
     height: 50px;
-    
+    margin-right: 12px;
     border: 1px solid var(--form-border-color);
     background-color: transparent;
     border-radius: 4px;
+
+    padding: 0;
 }
 
 .footer-form .label{
