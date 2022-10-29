@@ -349,16 +349,13 @@
           </div>
           </label>
           <label class="hero-label" for="comment">Коментар</label>
-          <textarea class="modal-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>
-          <div class="checkbox-thumb">
-          <label class="terms" for="checkbox">
-            <input class="checkbox-input" type="checkbox" name="terms" id="checkbox">
+          <textarea class="modal-comment" name="comment" id="comment" placeholder="Введіть текст"></textarea>         
+          <label class="terms checkbox-thumb" for="checkbox">
+            <input class="checkbox-input visually-hidden" type="checkbox" name="terms" id="checkbox">
             <span class="custom-checkbox"></span>
-            Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a> 
+            Погоджуюся з розсилкою та приймаю <a class="terms-link" href="#">Умови договору</a> 
           </label>
-          </div>
-          <div class="button-thumb"><button class="button form-submit" type="submit">Відправити</button></div>
-          
+          <div class="button-submit-thumb"><button class="button button-submit" type="submit">Відправити</button></div>
         </form>
       </div>
     </div>
@@ -409,11 +406,11 @@
         </ul>
       </div>
       <div class="subscription-thumb">
-        <h2 class="subscription-header">Підпишіться на розсилку</h2>
+        <label class="label subscription-header" for="mail">Підпишіться на розсилку</label>
         <form class="footer-form">
           <div class="flexbox">
-            <input class="input-email" type="email" name="mail" id="mail">
-            <label class="label" for="mail">E-mail</label>
+            <input class="input-email" type="email" name="mail" id="mail" placeholder="E-mail">
+            <label class="label" for="mail"></label>
             <button class="button" type="submit">Підписатися
               <svg class="form-img">
                 <use href="./image/icons/symbol-defs.svg#icon-form-send"></use>
