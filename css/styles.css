@@ -372,7 +372,7 @@ margin-left: 50px;
 
     min-width: 528px;
     min-height: 581px;
-    
+    padding: 40px;
 
     opacity: 1;
 
@@ -389,14 +389,7 @@ margin-left: 50px;
     transform 250ms var(--cubic-primary),
 }
 
-.modal-hero-form{
-    position: relative;
-    height: 100%;
-    margin: 40px;
-}
-
 .modal-hero-form .modal-header{
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -409,7 +402,6 @@ margin-left: 50px;
 
 .modal-hero-form .hero-label{
     display: block;
-    font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
@@ -440,6 +432,7 @@ margin-left: 50px;
 }
 
 .modal-hero-form .modal-comment{
+    display: block;
     resize: none;
     padding: 12px 16px;
     width: 100%;
@@ -479,22 +472,22 @@ margin-left: 50px;
     height: 15px;
     border: 2px solid #212121;
     border-radius: 2px;
+    margin-right:  7px;
 
 }
 
 .checkbox-input:checked ~ .custom-checkbox{
     background-image: url(../image/icons/check.svg);
     background-size: contain;
-    background-origin: border-box;
     border: none;
 }
 
 .terms{
     
-    display: block;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -503,30 +496,25 @@ margin-left: 50px;
 
 .terms .terms-link{
     color: var(--accent-txt-cl);
-    display: inline-block;
-}
-
-.button-submit-thumb{
-    display: flex;
-    
+    margin-left: 4px;
 }
 
 .button-submit{
+    display: block;
     margin-top: 30px;
     margin-left:auto;
     margin-right: auto;
     padding: 10px 52px;
 
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 
-    border: 0 solid;
+    border: none;
 
-    background: var(--form-button-color);
+    background-color: var(--form-button-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: background-color 250ms var(--cubic-primary);
@@ -574,6 +562,14 @@ margin-left: 50px;
 .close-button-image{
     width: 18px;
     height: 18px;     
+
+    transition: fill 250ms var(--cubic-primary);
+}
+
+.close-button:hover .close-button-image, 
+.close-button:focus .close-button-image{
+
+    fill: var(--accent-txt-cl);
 }
 
 .is-hidden{
@@ -919,7 +915,7 @@ margin-left: 50px;
 /* footer-form */
 
 .subscription-thumb{
-    margin-left: 93px;
+    margin-left: auto;
 }
 
 .subscription-header{
@@ -937,7 +933,8 @@ margin-left: 50px;
 }
 
 .footer-form{
-    position: relative;
+    display: flex;
+    gap: 12px;
 }
 
 .footer-form .flexbox{
@@ -945,10 +942,8 @@ margin-left: 50px;
 }
 
 .footer-form .input-email{
-    display: block;
     width: 358px;
     height: 50px;
-    margin-right: 12px;
     border: 1px solid var(--form-border-color);
     background-color: transparent;
     border-radius: 4px;
@@ -964,7 +959,7 @@ margin-left: 50px;
 }
 
 .footer .button {
-    display: flex;
+    display: inline-flex;
     background-color: var(--form-button-color);
     align-items: center;
     padding: 10px 28px;
@@ -978,8 +973,6 @@ margin-left: 50px;
     line-height: 1.88;
     letter-spacing: 0.06em;
 
-    fill: var(--footer-txt-color);
-
     transition: background-color 250ms var(--cubic-primary); 
 }
 
@@ -992,7 +985,6 @@ margin-left: 50px;
 .footer  .form-img{
     width: 24px;
     height: 24px;
-    fill: #000;
     margin-left: 10px;
 
     fill: currentColor;
